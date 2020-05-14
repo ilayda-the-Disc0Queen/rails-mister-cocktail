@@ -8,3 +8,4 @@
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+# api url: https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list
