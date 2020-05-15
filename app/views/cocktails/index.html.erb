@@ -1,15 +1,36 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dv59x91lc/image/upload/v1589544575/kyryll-ushakov-lwoTuByIuC4-unsplash_vlu8oj.jpg);" alt="Cocktail">
+  <div class="container">
+    <h1><strong>Miss Cocktail</strong></h1>
+    <h2>bringing <strong>delicious coctails</strong> to <strong>delicious people</strong></h2>
+    <p>Find recipes for your all time faves, or try your hand at a new concoction!</p>
+  </div>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
       <h1>All cocktails</h1>
-      <ul class="list-group">
-        <% @cocktails.each do |cocktail| %>
+        <ul class="list-group">
+         <% @cocktails.each do |cocktail| %>
           <li class="list-group-item">
-            <%= link_to cocktail.name, cocktail_path(cocktail) %>
+            <%= link_to cocktail.name, cocktail_path(cocktail), class: "btn btn-ghost" %>
           </li>
-        <% end %>
-      </ul>
-      <%= link_to "Add a new cocktail", new_cocktail_path, class: 'btn btn-primary' %>
+          <% end %>
+        </ul>
     </div>
+  </div>
+</div>
+
+<div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dv59x91lc/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1589556542/olena-sergienko-JjGLEN7T8xI-unsplash_pupglo.jpg)">
+     Orange Porange
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dv59x91lc/image/upload/v1589557356/masahiro-naruse-IvpixuSNqD0-unsplash_jd5biy.jpg)">
+    Combine breakfast with alcohol: drink an egg
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dv59x91lc/image/upload/v1589557603/andrew-wong-ieXeRR0qUFA-unsplash_xwy4hc.jpg">
+    I'm so miserable, I'd drink the glass too
   </div>
 </div>

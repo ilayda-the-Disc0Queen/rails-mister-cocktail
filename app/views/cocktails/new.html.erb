@@ -4,8 +4,6 @@
       <h1>Create a new cocktail</h1>
       <%= simple_form_for @cocktail do |f| %>
         <%= f.input :name %>
-        <%= f.input :ingredients %>
-        <%= f.input :doses %>
         <%= f.submit class: 'btn btn-primary' %>
       <% end %>
       <%= link_to "All cocktails", root_path, class: 'btn btn-primary' %>
